@@ -54,7 +54,7 @@ The `RequestRouter` has a decorator method for each RSocket request type:
 All of the above methods receive a single argument, a string representing the route. The decorators may be applied multiple times
 which allows for aliases for the same route.
 
-*Lines 12-15* define the login method and attach it to a request-response with the <b>login</b> route.
+*Lines 12-15* define the login method and attach it to a [request-response](https://rsocket.readthedocs.io/en/stable/api.html#rsocket.request_handler.RequestHandler.request_response) with the <b>login</b> route.
 The method name does not have to match the route.
 
 All methods decorated by the request router accept two optional arguments:

@@ -20,7 +20,7 @@ On the server side, the response, stream and channel request types can be simpli
 
 ### Handler interface
 
-The handler class needs to implement `ReactivexHandler` instead of `RequestHandler`. Use the
+The handler class needs to implement `ReactivexHandler` instead of [RequestHandler](https://rsocket.readthedocs.io/en/latest/api.html#rsocket.request_handler.RequestHandler). Use the
 `reactivex_handler_factory` to pass the handler to the `RSocketServer` init argument.
 When using routing, use the same `RequestRouter` instance, but the return values from the registered methods must
 match the return values specified on `ReactivexHandler`
